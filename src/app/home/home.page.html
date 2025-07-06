@@ -1,19 +1,20 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Ionic 4 Crop Upload
+      Blank
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card>
-    <img *ngIf="!fileUrl" src="assets/no-image.jpeg"/>
-    <img *ngIf="fileUrl" src="{{fileUrl}}"/>
-    <ion-card-content>
-      <ion-button color="medium" size="large" (click)="cropUpload()">
-        <ion-icon slot="icon-only" name="camera"></ion-icon>
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
 </ion-content>

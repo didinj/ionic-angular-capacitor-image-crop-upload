@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crop & Upload</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="block" (click)="selectImage()">Select Image</ion-button>
+
+  <div *ngIf="imageUrl" class="cropper-container">
+    <img #image [src]="imageUrl" alt="Selected" />
+  </div>
+
+  <ion-button
+    expand="block"
+    color="success"
+    (click)="cropAndUpload()"
+    *ngIf="imageUrl"
+    >Crop & Upload</ion-button
+  >
+</ion-content>

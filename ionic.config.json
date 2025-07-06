@@ -1,7 +1,7 @@
 {
-  "name": "ionic4-crop",
+  "name": "image-crop-upload",
   "integrations": {
-    "cordova": {}
+    "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular-standalone"
 }
